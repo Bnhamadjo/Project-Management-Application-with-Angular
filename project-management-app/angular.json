@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "newProjectRoot": "projects",
+  "newProjectRoot": "Angular-Projects",
   "projects": {
     "project-management-app": {
       "root": "",
@@ -51,18 +51,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "project-management-app:build"
+            "buildTarget": "project-management-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "project-management-app:build:production"
+              "buildTarget": "project-management-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "project-management-app:build"
+            "buildTarget": "project-management-app:build"
           }
         },
         "test": {
@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "project-management-app"
+  "Angular-Projects": "project-management-app",
+  "cli": {
+    "analytics": "1aeac32f-cf5e-4d8f-aeec-60d6d4c68e4c"
+  }
 }
